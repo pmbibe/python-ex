@@ -1,0 +1,6 @@
+import re
+
+def integers_in_brackets(stringss):
+    a = re.findall(r'\b\d+\B[^a-zA-Z]|[-]\d+\B[^a-zA-Z]',stringss)
+    print(a)
+integers_in_brackets("  afd [asd] [12 ] [a34]  [ -45653 ]tt [+1546542]xxx 98098  asdsd4444444 54654asdasds 4545456sadasd sdads44sss" )
